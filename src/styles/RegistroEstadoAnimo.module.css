@@ -1,0 +1,250 @@
+.container {
+  font-family: sans-serif;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  background-color: #f9f9f9;
+  min-height: 100vh;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.perfilButton {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1em;
+  color: #555;
+}
+
+.header h1 {
+  color: #333;
+  margin-bottom: 5px;
+}
+
+.header p {
+  color: #777;
+  font-size: 0.9em;
+}
+
+.seleccionEstado h2 {
+  color: #555;
+  margin-bottom: 10px;
+}
+
+.estados {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.estado {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: white;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.estado.seleccionado {
+  background-color: #e0e0ff; /* Un color para indicar selección */
+  border-color: #aaa;
+}
+
+.estado:hover {
+  background-color: #f0f0f0;
+}
+
+.estado .numero {
+  font-size: 1.2em;
+  color: #777;
+  margin-bottom: 5px;
+}
+
+.estado .emoji {
+  font-size: 1.5em;
+  margin-bottom: 5px;
+}
+
+.estado span {
+  text-align: center;
+  color: #555;
+}
+
+.estado.personalizado {
+  flex-direction: row;
+  padding: 10px;
+  align-items: center;
+}
+
+.estado.personalizado .emoji {
+  margin-right: 10px;
+}
+
+.estado.personalizado input[type="text"] {
+  border: none;
+  padding: 8px;
+  border-radius: 5px;
+  background-color: #f0f0f0;
+  flex-grow: 1;
+}
+
+.factores h2 {
+  color: #555;
+  margin-bottom: 10px;
+}
+
+.listaFactores {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.factor {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.factor .icono {
+  font-size: 1.2em;
+  margin-right: 10px;
+  color: #777;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 40px;
+  height: 20px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  transition: .4s;
+  border-radius: 20px;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 16px;
+  width: 16px;
+  left: 2px;
+  bottom: 2px;
+  background-color: white;
+  transition: .4s;
+  border-radius: 50%;
+}
+
+input:checked + .slider {
+  background-color: #4CAF50; /* Verde al activar */
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #4CAF50;
+}
+
+input:checked + .slider:before {
+  transform: translateX(20px);
+}
+
+.notas h2 {
+  color: #555;
+  margin-bottom: 10px;
+}
+
+.notas .labelNotas {
+  display: block;
+  margin-bottom: 5px;
+  color: #777;
+  font-size: 0.9em;
+}
+
+.notas .textareaNotas {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  font-size: 1em;
+  min-height: 80px;
+  margin-bottom: 20px;
+}
+
+.botones {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.guardar {
+  background-color: #673ab7; /* El botón azul */
+  color: white;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1em;
+  transition: background-color 0.2s ease;
+}
+
+.guardar:hover {
+  background-color: #512da8;
+}
+
+.navegacionInferior {
+  display: flex;
+  justify-content: space-around;
+}
+
+.verHistorial,
+.verRecomendaciones {
+  background-color: #f0f0f0; /* Botones grises */
+  color: #555;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 0.9em;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.verHistorial:hover,
+.verRecomendaciones:hover {
+  background-color: #ddd;
+  color: #333;
+}
