@@ -1,0 +1,212 @@
+.container {
+    font-family: sans-serif;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background-color: #f9f9f9;
+    min-height: 100vh;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.perfilButton {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 1em;
+    color: #555;
+    padding: 8px;
+}
+
+.header h2 {
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.header p {
+    color: #777;
+    font-size: 0.9em;
+    text-align: center;
+}
+
+.filter {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.datePickerContainer {
+    display: flex;
+    flex-direction: column;
+}
+
+.label {
+    font-size: 0.9em;
+    color: #555;
+    margin-bottom: 5px;
+}
+
+.datePickerInput {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.applyButton {
+    background-color: #673ab7;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.9em;
+}
+
+.applyButton:hover {
+    background-color: #512da8;
+}
+
+.tabs {
+    display: flex;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #eee;
+}
+
+.tab {
+    padding: 10px 15px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    font-size: 0.95em;
+    color: #777;
+    border-bottom: 2px solid transparent;
+    transition: color 0.2s ease, border-bottom-color 0.2s ease;
+}
+
+.tab.activeTab {
+    color: #333;
+    font-weight: bold;
+    border-bottom-color: #673ab7;
+}
+
+.tab:hover {
+    color: #555;
+}
+
+.content {
+    margin-bottom: 20px;
+}
+
+.chartContainer {
+    background-color: white;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+.chartTitle {
+    color: #555;
+    font-size: 1.1em;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.calendarContainer {
+    background-color: white;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+    text-align: center;
+}
+
+.calendarContainer h3 {
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.detailsContainer {
+    margin-bottom: 20px;
+}
+
+.detailsTitle {
+    color: #555;
+    font-size: 1.1em;
+    margin-bottom: 10px;
+}
+
+.detailsList {
+    list-style: none;
+    padding: 0;
+}
+
+.detailItem {
+    background-color: white;
+    padding: 10px 15px;
+    border-bottom: 1px solid #eee;
+    display: flex;
+    align-items: center;
+}
+
+.detailItem:last-child {
+    border-bottom: none;
+}
+
+.moodIcon {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #f0f0f0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 15px;
+    font-size: 1.2em;
+    color: #777;
+}
+
+.moodInfo {
+    flex-grow: 1;
+}
+
+.moodDate {
+    font-size: 0.9em;
+    color: #333;
+    margin-bottom: 3px;
+}
+
+.moodText {
+    font-size: 0.85em;
+    color: #555;
+}
+
+.optionsIcon {
+    cursor: pointer;
+    color: #777;
+    font-size: 1.2em;
+    margin-left: 10px;
+}
+
+.actions {
+    display: flex;
+    gap: 10px;
+    justify-content: flex-end;
+}
+
+.exportButton,
+.shareButton {
+    background-color: #f0f0f0;
+    color: #555;
+    padding: 10px 15px; 
+}
+

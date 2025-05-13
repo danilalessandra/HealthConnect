@@ -1,0 +1,341 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  font-family: sans-serif; /* Example font */
+}
+
+.title {
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.subtitle {
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.tabNavigation {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.tabNavigation button {
+  padding: 10px 20px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  font-weight: bold;
+  color: #777;
+  border-bottom: 2px solid transparent; /* For the active state */
+}
+
+.tabNavigation button.activeTab {
+  color: #333;
+  border-bottom-color: #000; /* Example active state */
+}
+
+.loginForm {
+  width: 300px; /* Adjust as needed */
+  margin-bottom: 30px;
+}
+
+.formGroup {
+  margin-bottom: 15px;
+}
+
+.label {
+  display: block;
+  margin-bottom: 5px;
+  color: #555;
+}
+
+.input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+  margin-bottom: 5px;
+}
+
+.passwordInputWrapper {
+  position: relative;
+}
+
+.togglePasswordButton {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  font-size: 0.9em;
+  color: #777;
+}
+
+.forgotPasswordLink {
+  color: #007bff;
+  text-decoration: none;
+  font-size: 0.9em;
+}
+
+.forgotPasswordLink:hover {
+  text-decoration: underline;
+}
+
+.loginButton {
+  background-color: #673ab7; /* Example purple color */
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%;
+  font-size: 1em;
+  font-weight: bold;
+}
+
+.loginButton:hover {
+  background-color: #512da8;
+}
+
+.socialLogin {
+  text-align: center;
+  color: #777;
+  margin-bottom: 20px;
+}
+
+.socialLoginText {
+  margin-bottom: 10px;
+}
+
+.socialButtons {
+  display: flex;
+  gap: 10px;
+}
+
+.socialButtons button {
+  padding: 10px 15px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 0.9em;
+  flex-grow: 1; /* Distribute space evenly */
+  justify-content: center; /* Center text */
+  display: flex;
+  align-items: center; /* Center text vertically */
+}
+
+.googleButton {
+  background-color: #fff;
+  color: #333;
+}
+
+.facebookButton {
+  background-color: #fff;
+  color: #333;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
